@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Chat App</title>
+    <script defer src="http://localhost:3001/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="chatlogo.jpg" alt="Chat Logo">
+    </nav>
+    <div class="chat-container">
+        <div class="message-container">
+            <!-- Messages will appear here -->
+        </div>
+    </div>
+    <div class="send-container">
+        <form id="send-form">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type your message..." autocomplete="off">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
+
